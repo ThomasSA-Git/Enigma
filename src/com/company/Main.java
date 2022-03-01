@@ -7,7 +7,7 @@ public class Main {
       int num = 0;
       return num;
     } else {
-      int num = Character.getNumericValue(letter) - 9;
+      int num = Character.getNumericValue(letter) - 9;  //Den numeriske værdi af A er 10, derfor -9 for at få 1.
       return num;
     }
   }
@@ -17,7 +17,7 @@ public class Main {
       int num = 0;
       return num;
     } else {
-      int num = c - 'A' + 1;
+      int num = c - 'A' + 1;    //A har her værdien 68. Derfor trækkes A fra hver gang, og der plusses med 1 for at få den rigtige værdi.
       return num;
     }
   }
@@ -30,6 +30,5 @@ public class Main {
 
     obj.numericValue(letter);
     obj.numericValue2(c);
-
   }
 }
